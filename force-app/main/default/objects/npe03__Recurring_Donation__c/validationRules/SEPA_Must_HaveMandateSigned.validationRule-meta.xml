@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEPA_Must_HaveMandateSigned</fullName>
+    <active>true</active>
+    <description>If a SEPA DD, the Mandate must be signed</description>
+    <errorConditionFormula>SEPA_Direct_Debit__c &amp;&amp; ISBLANK( Date_Mandate_Signed__c )</errorConditionFormula>
+    <errorDisplayField>Date_Mandate_Signed__c</errorDisplayField>
+    <errorMessage>This is a SEPA Direct Debit so the Mandate must be signed</errorMessage>
+</ValidationRule>

@@ -1,0 +1,28 @@
+minimum_cumulusci_version: '3.85.0'
+project:
+    name: SEPA-PostInstall-NPSP
+    package:
+        name: SEPA-PostInstall-NPSP
+        api_version: '60.0'
+    dependencies:
+        - github: 'https://github.com/SalesforceFoundation/NPSP'
+    git:
+    test:
+        name_match: 'Test%'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/SEPA-PostInstall-NPSP/tests
+            options:
+                outputdir: robot/SEPA-PostInstall-NPSP/results
+
+    robot_testdoc:
+        options:
+            path: robot/SEPA-PostInstall-NPSP/tests
+            output: robot/SEPA-PostInstall-NPSP/doc/SEPA-PostInstall-NPSP_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75

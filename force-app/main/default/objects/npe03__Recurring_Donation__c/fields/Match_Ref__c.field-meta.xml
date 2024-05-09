@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Match_Ref__c</fullName>
+    <description>Might be used to match transactions</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is taken from DevEx it seems it was used in situations where the Donor ID did not match the Donor Reference coming through on the Bank file so rather then change the system DonorID USE this field to put in the matching Donor reference frm bank.</inlineHelpText>
+    <label>Match Ref</label>
+    <length>20</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

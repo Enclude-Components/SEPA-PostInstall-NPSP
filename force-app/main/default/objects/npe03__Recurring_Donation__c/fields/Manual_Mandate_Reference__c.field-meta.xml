@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manual_Mandate_Reference__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If the mandate is already set up, it can be entered here and this will override the Unique Mandate Reference</inlineHelpText>
+    <label>Manual Mandate Reference</label>
+    <length>35</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

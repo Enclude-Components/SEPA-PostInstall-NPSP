@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IBAN_Validation__c</fullName>
+    <externalId>false</externalId>
+    <formula>if (isblank(IBAN__c ), &quot;&quot;, if (MOD(
+ VALUE(
+ SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((SUBSTITUTE((
+ SUBSTITUTE(
+ RPAD( MID( SUBSTITUTE(IBAN__c , &quot; &quot;, &quot;&quot;),5,LEN(SUBSTITUTE( IBAN__c  , &quot; &quot;, &quot;&quot;)) ) ,LEN(SUBSTITUTE(IBAN__c , &quot; &quot;, &quot;&quot;)), MID(SUBSTITUTE(IBAN__c , &quot; &quot;, &quot;&quot;),1,4) ),&quot;A&quot;,&quot;10&quot;))
+ ,&quot;B&quot;,&quot;11&quot;)),&quot;C&quot;,&quot;12&quot;)),&quot;D&quot;,&quot;13&quot;)),&quot;E&quot;,&quot;14&quot;)),&quot;F&quot;,&quot;15&quot;)),&quot;G&quot;,&quot;16&quot;)),&quot;H&quot;,&quot;17&quot;)),&quot;I&quot;,&quot;18&quot;)),&quot;J&quot;,&quot;19&quot;)),&quot;K&quot;,&quot;20&quot;)),&quot;L&quot;,&quot;21&quot;)),&quot;M&quot;,&quot;22&quot;)),&quot;N&quot;,&quot;23&quot;)),&quot;O&quot;,&quot;24&quot;)),&quot;P&quot;,&quot;25&quot;)),&quot;Q&quot;,&quot;26&quot;)),&quot;R&quot;,&quot;27&quot;)),&quot;S&quot;,&quot;28&quot;)),&quot;T&quot;,&quot;29&quot;)),&quot;U&quot;,&quot;30&quot;)),&quot;V&quot;,&quot;31&quot;)),&quot;W&quot;,&quot;32&quot;)),&quot;X&quot;,&quot;33&quot;)),&quot;Y&quot;,&quot;34&quot;)),&quot;Z&quot;,&quot;35&quot;))
+ ,97) =1,&quot;IBAN is Valid&quot;, &quot;IBAN may not be valid&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IBAN Validation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
